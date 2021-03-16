@@ -1,0 +1,15 @@
+    
+    export const resourcetypes = [
+    {"resources":"home", "role":"Guest"}
+    ,
+{"resources":"admin", "role":"Guest"}
+    ,
+{"resources":"createcollege", "role":"Guest"}
+    ,
+{"resources":"createstudent", "role":"Guest"}
+    ,
+{"resources":"getallstudent", "role":"Guest"}
+    ,
+{"resources":"createplace", "role":"Guest"}
+    
+]

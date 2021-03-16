@@ -1,0 +1,40 @@
+<h2 class="screen-align">Createstudent</h2>
+<div id="template-i2jk" class="row">
+    <div id="template-i4e5" class="cell">
+        <label id="template-ivvh" class="label">Name</label>
+        <input id="template-isbf" placeholder="Enter name" [(ngModel)]="student.Name"
+        [ngModelOptions]="{standalone: true}" class="input form-control" />
+    </div>
+    <div id="template-i0vw" class="cell">
+        <label id="template-iol7" class="label">Email</label>
+        <input id="template-iyl1" placeholder="Enter email" [(ngModel)]="student.Email"
+        [ngModelOptions]="{standalone: true}" class="input form-control" />
+    </div>
+    <div id="template-i2zl" class="cell">
+        <label id="template-i32f" class="label">Department</label>
+        <input id="template-ixwtx" placeholder="Enter department"
+        [(ngModel)]="student.Department" [ngModelOptions]="{standalone: true}"
+        class="input form-control" />
+    </div>
+</div>
+<div id="template-ishzf" class="row">
+    <div id="template-iw3fa" class="cell">
+        <label id="template-iigfi" class="label">College</label>
+        <div id="template-idfe9" class="">
+            <ng-select id="template-ihczf" name="dynamicdropdown_template-ihczf" [searchable]="true"
+            [virtualScroll]="true" [items]="collegeitemArray" bindLabel="collegename"
+            bindValue="collegename" [(ngModel)]="student.College" [ngModelOptions]="{standalone: true}"
+            (click)="collegeGpGetAllValues()" class="form-control"></ng-select>
+        </div>
+    </div>
+    <div id="template-i2tkf" class="cell">
+        <label id="template-iz62h" class="label">Place</label>
+        <div id="template-i0j4l" class="">
+            <ng-select id="template-ia7eo" name="dynamicdropdown_template-ia7eo" [searchable]="true"
+            [virtualScroll]="true" [items]="placeitemArray" bindLabel="placename" bindValue="placename"
+            [(ngModel)]="student.Place" [ngModelOptions]="{standalone: true}" (click)="placeGpGetAllValues()"
+            class="form-control"></ng-select>
+        </div>
+    </div>
+</div>
+<button id="template-ifvnw" (click)="GpCreate()" class="button btn btn-primary">Create</button>
