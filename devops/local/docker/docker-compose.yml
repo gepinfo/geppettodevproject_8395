@@ -81,7 +81,7 @@ services:
     image: student-8395
     container_name: student-8395
     ports: 
-      - 8013:8013
+      - 8016:8016
     env_file: .env
     depends_on:
       - mongo
@@ -91,7 +91,7 @@ services:
     image: college-8395
     container_name: college-8395
     ports: 
-      - 8014:8014
+      - 8017:8017
     env_file: .env
     depends_on:
       - mongo
@@ -101,7 +101,7 @@ services:
     image: place-8395
     container_name: place-8395
     ports: 
-      - 8015:8015
+      - 8018:8018
     env_file: .env
     depends_on:
       - mongo

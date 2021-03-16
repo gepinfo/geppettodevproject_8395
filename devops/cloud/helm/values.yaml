@@ -57,20 +57,20 @@ service:
   student: 
     name: student
     type: NodePort
-    port: 8013
-    targetPort: 8013
+    port: 8016
+    targetPort: 8016
 
   college: 
     name: college
     type: NodePort
-    port: 8014
-    targetPort: 8014
+    port: 8017
+    targetPort: 8017
 
   place: 
     name: place
     type: NodePort
-    port: 8015
-    targetPort: 8015
+    port: 8018
+    targetPort: 8018
 
 
 deployment:
